@@ -17,8 +17,12 @@ function splitSentence(sentence) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(nameList) {
+  let firstWord = nameList[0]
+  let lastWord = nameList[nameList.length-1]
+  let firstWordWithSpace = " " + firstWord
+  let result = [lastWord, firstWordWithSpace]
+  return result)
 }
 
 // Desafio 5
