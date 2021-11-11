@@ -7,9 +7,9 @@ function compareTrue(a,b) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
-}
+function calcArea(x,y) {
+  return (x * y)/ 2
+}console.log(calcArea(5,2))
 
 // Desafio 3
 function splitSentence() {
