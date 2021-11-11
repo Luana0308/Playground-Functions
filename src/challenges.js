@@ -22,12 +22,15 @@ function concatName(nameList) {
   let lastWord = nameList[nameList.length-1]
   let firstWordWithSpace = " " + firstWord
   let result = [lastWord, firstWordWithSpace]
-  return result
+  return result.toString()
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins,ties) {
+  wins = wins * 3
+  ties = ties * 1
+  totalPoints = wins + ties
+  return totalPoints
 }
 
 // Desafio 6
