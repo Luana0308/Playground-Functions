@@ -65,12 +65,18 @@ function catAndMouse(posicaoMouse,posicaocat1,posicaocat2) {
     resultado = "os gatos trombam e o rato foge"
   }
 return resultado
-} console.log(catAndMouse(1,0,2))
+} 
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(number) {
+  resultado =[]
+  for(let i=0; i <= number.length; i+=1){
+    if(number[i] === 3%0){
+      resultado = "fizz"
+    }
+  }
+  return resultado
+}console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
