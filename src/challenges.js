@@ -86,12 +86,49 @@ function fizzBuzz(number) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
-}
-function decode() {
-  // seu código aqui
-}
+function encode(frase) {
+  let result = frase
+  for(let i=0; i<= frase.length; i+=1){
+    if(result[i] === "a"){
+      result = frase.replace(/a/g,1)
+    }
+    else if (result[i] === "e"){
+      result = result.replace(/e/g,2)
+    }
+    else if(result[i] === "i"){
+      result = result.replace(/i/g,3)
+    }
+    else if(result[i] === "o"){
+      result = result.replace(/o/g,4)
+    }
+    else if(result[i] === "u"){
+      result = result.replace(/u/g,5)
+    }
+  }
+  return result
+} 
+
+function decode(frase2) {
+  let resultado = frase2
+  for(let i=0; i <= frase2.length; i+=1){
+    if(frase2[i]=== "1"){
+      resultado = resultado.replace(/1/g,"a")
+    }
+    else if(frase2[i] === "2"){
+      resultado = resultado.replace(/2/g,"e")
+    }
+    else if(frase2[i] === "3"){
+      resultado = resultado.replace(/3/g,"i")
+    }
+    else if(frase2[i] === "4"){
+      resultado = resultado.replace(/4/g,"o")
+    }
+    else if(frase2[i] === "5"){
+      resultado = resultado.replace(/5/g, "u")
+    }
+  }
+  return resultado
+} 
 
 module.exports = {
   calcArea,
