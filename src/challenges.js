@@ -50,8 +50,6 @@ for(let index=0; index <=numberList.length; index +=1){
 return repetir
 }
 
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]))
-
 // Desafio 7
 function catAndMouse(posicaoMouse,posicaocat1,posicaocat2) {
     let distanciaCat1 = Math.abs(posicaoMouse - posicaocat1)
@@ -69,14 +67,23 @@ return resultado
 
 // Desafio 8
 function fizzBuzz(number) {
-  resultado =[]
-  for(let i=0; i <= number.length; i+=1){
-    if(number[i] === 3%0){
-      resultado = "fizz"
+   let resultado =[]
+  for(let i=0; i < number.length; i+=1){
+    if(number[i] % 3 === 0 && number[i] % 5 !== 0){
+      resultado.push ("fizz");
+    } 
+    else if(number[i] % 5 === 0 && number[i] % 3 != 0){
+      resultado.push("buzz")
+    }
+    else if(number[i] % 5 === 0 && number[i] % 3 === 0){
+      resultado.push("fizzBuzz")
+    }
+    else{
+      resultado.push("bug!")
     }
   }
   return resultado
-}console.log(fizzBuzz([2, 15, 7, 9, 45]))
+}
 
 // Desafio 9
 function encode() {
