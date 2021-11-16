@@ -51,6 +51,7 @@ return repetir
 }
 
 // Desafio 7
+// consultei o https://stackoverflow.com/questions/4652104/convert-a-negative-number-to-a-positive-one-in-javascript
 function catAndMouse(posicaoMouse,posicaocat1,posicaocat2) {
     let distanciaCat1 = Math.abs(posicaoMouse - posicaocat1)
     let distanciaCat2 = Math.abs(posicaoMouse - posicaocat2)
@@ -66,6 +67,7 @@ return resultado
 } 
 
 // Desafio 8
+//consultei dúvidas no slack da tribo b
 function fizzBuzz(number) {
    let resultado =[]
   for(let i=0; i < number.length; i+=1){
@@ -85,7 +87,8 @@ function fizzBuzz(number) {
   return resultado
 }
 
-// Desafio 9
+// Desafio 9 
+// material usado https://www.w3schools.com/jsref/jsref_replace.asp
 function encode(frase) {
   let result = frase
   for(let i=0; i<= frase.length; i+=1){
