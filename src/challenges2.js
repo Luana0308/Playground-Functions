@@ -21,14 +21,28 @@ function generatePhoneNumber(numbertell){
   if(numbertell.length !== 11){
      return "Array com tamanho incorreto."
   }
-  let phoneNumber = ""
-  for(i=0; i<numbertell.length; i+=1){
+  for( let i=0; i<numbertell.length; i+=1){
     if(numbertell[i] > 9 || numbertell[i] < 0){
-      return "Não é possivel gerar um numero de telefone com esses valores"
+      return "não é possível gerar um número de telefone com esses valores"
     }
+   let counterNumber = 0;
+    for(let j= 0; j < numbertell.length; j += 1){
+      if(numbertell[i] === numbertell[j]){
+        counterNumber = counterNumber + 1
+      }
+      if(counterNumber >= 3){
+       return "não é possível gerar um número de telefone com esses valores" 
+      }
+    } 
   }
-  return phoneNumber
-} console.log(generatePhoneNumber([-1,2,-3,4,5,11,1,1,1,2,1]))
+  let phoneNumber = numbertell.join("")
+  let ddd = phoneNumber.slice(0,2)
+  let numberFirst = phoneNumber.slice(2,7)
+  let numberFinal = phoneNumber.slice(7,11)
+  let finalNumberTell = "(" + ddd + ")" + " " + numberFirst + "-" + numberFinal
+  
+  return finalNumberTell
+}  
 
 // Desafio 12
 function triangleCheck() {
